@@ -72,7 +72,7 @@ public class TestStudent {
     }
     
     @Test
-    public void studentSubmittedHwWrong() { //student who is not registered in the class submitted HW
+    public void studentSubmittedHwWrong() { //student who is not registered in the class submitted HomeWork
   	  // this.admin.createClass("Test", 2017, "Instructor", 2);
   	   this.student.registerForClass("A", "Test", 2017);
   	   this.instructor.addHomework("Instructor", "Test", 2017, "HW1");

@@ -70,7 +70,7 @@ public class TestInstructor  {
 			//this.student.submitHomework("A", "HW1", "HW1Ans", "Test", 2017);
 			this.instructor.assignGrade("Instructor", "Test", 2017, "HW1", "A", 89);
 			assertNull(this.instructor.getGrade("Test", 2017, "HW1", "A"));
-		}
+    			}
     		
     		@Test
     		public void TestHWAddedbyWrongIns() {//homework added by wrong instructor
@@ -87,7 +87,7 @@ public class TestInstructor  {
     		}
     		
     		@Test
-			public void TestRightInsAssignsNegGrade(){//neg grade assigned by instructor of class
+			public void TestRightInsAssignsNegGrade(){//negative grade assigned by instructor of class
 			this.admin.createClass("Test", 2017, "Instructor", 15);
 			this.student.registerForClass("A", "Test", 2017);
 			this.instructor.addHomework("Instructor", "Test", 2017, "HW1");

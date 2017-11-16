@@ -105,7 +105,7 @@ public class TestAdmin {
    }
    
    @Test
-   public void changeCapacitytoMore() { //changing capacity to more than org capacity
+   public void changeCapacitytoMore() { //changing capacity to more than original capacity
 	   this.admin.createClass("Test", 2017, "Instructor", 15);
 	   this.admin.changeCapacity("Test",2017, 16);
 	   assertEquals(16,this.admin.getClassCapacity("Test", 2017));
